@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import ContentContainer from "./components/ContentContainer/ContentContainer";
+import { Typography } from "@mui/material";
+
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [textColor, setTextColor] = useState("#003300");
+	const [backgroundColor, setBackgroundColor] = useState("#ffffff");
+	const [headerText, setHeaderText] = useState("No green score :( Complete the quiz below");
+	const [menuValue, setMenuValue] = useState(0);
+
+	const handleChange = (event, newValue) => {
+		setMenuValue(newValue);
+	};
+
+	return (
+		<div className="app">
+			<Header textColor={textColor} backgroundColor={backgroundColor} headerText={headerText} />
+			<Main
+				textColor={textColor}
+				backgroundColor={backgroundColor}
+				menuValue={menuValue}
+				handleChange={handleChange}
+			/>
+		</div>
+	);
 }
 
 export default App;
