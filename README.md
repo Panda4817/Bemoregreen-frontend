@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Be More Green React and Material UI front end
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
