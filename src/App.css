@@ -1,11 +1,7 @@
+
 .app {
   text-align: center;
   flex-grow: 1;
   overflow-x: "hidden";
   min-height: "200vh";
-}
-
-body {
-  background-image: url("http://localhost:3000/planet.jpg");
-  background-size: cover;
 }
