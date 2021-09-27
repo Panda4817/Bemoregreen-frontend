@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import ContentContainer from "../ContentContainer/ContentContainer";
 import { Typography } from "@mui/material";
+import Form from "../Form/Form";
 
 const Main = ({ children, textColor, backgroundColor, menuValue, handleChange }) => {
 	return (
@@ -42,7 +43,7 @@ const Main = ({ children, textColor, backgroundColor, menuValue, handleChange })
 						</Tabs>
 					</Box>
 					<ContentContainer menuValue={menuValue} index={0}>
-						<Typography>Item One</Typography>
+						<Form />
 					</ContentContainer>
 					<ContentContainer menuValue={menuValue} index={1}>
 						<Typography>Item two</Typography>

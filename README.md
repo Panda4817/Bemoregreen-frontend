@@ -1,4 +1,5 @@
 # Be More Green React and Material UI front end
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5f665062-9c73-4a35-81d1-8c749c7a4bf3/deploy-status)](https://app.netlify.com/sites/bemoregreen/deploys)
 
 ## Getting Started with Create React App
 
