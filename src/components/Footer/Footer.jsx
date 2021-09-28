@@ -10,7 +10,7 @@ const Footer = ({ textColor, backgroundColor }) => {
 			<AppBar
 				position="fixed"
 				sx={{
-					minHeight: "10vh",
+					maxHeight: "7vh",
 					color: textColor,
 					textAlign: "center",
 					backgroundColor: backgroundColor,
@@ -27,7 +27,7 @@ const Footer = ({ textColor, backgroundColor }) => {
 						variant="p"
 						color="inherit"
 						sx={{
-							marginRight: "5%",
+							marginRight: "1%",
 						}}
 					>
 						Be More Green before it is too late!

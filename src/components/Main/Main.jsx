@@ -4,9 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import ContentContainer from "../ContentContainer/ContentContainer";
-import { Typography } from "@mui/material";
-import Form from "../Form/Form";
 
 const Main = ({ children, textColor, backgroundColor, menuValue, handleChange }) => {
 	return (
@@ -14,10 +11,15 @@ const Main = ({ children, textColor, backgroundColor, menuValue, handleChange })
 			container
 			sx={{
 				justifyContent: "center",
-				marginTop: "5%",
+				marginTop: "50px",
+				marginBottom: "100px",
 			}}
 		>
-			<Card sx={{ width: "80%" }}>
+			<Card
+				sx={{
+					width: "90%",
+				}}
+			>
 				<Box sx={{ width: "100%", backgroundColor: backgroundColor }}>
 					<Box sx={{ borderBottom: 1, borderColor: "divider" }}>
 						<Tabs
@@ -42,15 +44,7 @@ const Main = ({ children, textColor, backgroundColor, menuValue, handleChange })
 							<Tab label="Eco Tips" />
 						</Tabs>
 					</Box>
-					<ContentContainer menuValue={menuValue} index={0}>
-						<Form />
-					</ContentContainer>
-					<ContentContainer menuValue={menuValue} index={1}>
-						<Typography>Item two</Typography>
-					</ContentContainer>
-					<ContentContainer menuValue={menuValue} index={2}>
-						<Typography>Item three</Typography>
-					</ContentContainer>
+					{children}
 				</Box>
 			</Card>
 		</Grid>
